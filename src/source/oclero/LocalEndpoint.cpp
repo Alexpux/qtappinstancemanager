@@ -107,7 +107,7 @@ struct LocalEndpoint::Impl {
     }
   }
 
-#pragma region Server
+  // --------------------------------- Server ----------------------------------
 
   void clearServer() {
     // Reset server.
@@ -373,9 +373,7 @@ struct LocalEndpoint::Impl {
     }
   }
 
-#pragma endregion
-
-#pragma region Client
+  // --------------------------------- Client ----------------------------------
 
   void clearClient() {
     if (client) {
@@ -569,9 +567,8 @@ struct LocalEndpoint::Impl {
     }
   }
 
-#pragma endregion
 
-#pragma region Static
+  // ----------------------------- Static helpers ------------------------------
 
   static QByteArray getHeader(const QByteArray& body) {
     QByteArray header;
@@ -608,8 +605,6 @@ struct LocalEndpoint::Impl {
     // Replace the backslash in RFC 2045 Base64 [a-zA-Z0-9+/=] to comply with server naming requirements.
     return appData.result().toBase64().replace('/', '_');
   }
-
-#pragma endregion
 };
 
 LocalEndpoint::LocalEndpoint(QObject* parent)
