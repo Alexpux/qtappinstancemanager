@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.1
+
+- Remove `#pragma region` and `#pragma endregion` comments.
+
 ## v1.3.0
 
 - Switch to Qt6.
