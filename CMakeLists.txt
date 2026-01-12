@@ -10,7 +10,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 # Set project information.
 project("QtAppInstanceManager"
   LANGUAGES CXX
-  VERSION 1.3.1.0
+  VERSION 1.3.2.0
   DESCRIPTION "A tool to communicate between the instances of your Qt application."
   HOMEPAGE_URL "https://github.com/oclero/QtAppInstanceManager"
 )
