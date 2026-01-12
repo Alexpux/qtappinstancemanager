@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.2
+
+- Update CMake configuration to use GNUInstallDirs for standard installation paths.
+- Update export and install commands to use project namespace.
+- Fix compatibility with Qt6 < 6.4.
+
 ## v1.3.1
 
 - Remove `#pragma region` and `#pragma endregion` comments.

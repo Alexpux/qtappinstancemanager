@@ -10,7 +10,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 # Set project information.
 project("QtAppInstanceManager"
   LANGUAGES CXX
-  VERSION 1.3.1.0
+  VERSION 1.3.2.0
   DESCRIPTION "A tool to communicate between the instances of your Qt application."
   HOMEPAGE_URL "https://github.com/oclero/QtAppInstanceManager"
 )
@@ -26,9 +26,20 @@ if(NOT CMAKE_OSX_DEPLOYMENT_TARGET)
 endif()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 
+# Include GNUInstallDirs for standard installation paths.
+include(GNUInstallDirs)
+
 # Find Qt.
 find_package(Qt6 REQUIRED COMPONENTS Core Network)
-qt_standard_project_setup()
+
+# qt_standard_project_setup() is only available in Qt >= 6.3.
+if(COMMAND qt_standard_project_setup)
+  qt_standard_project_setup()
+else()
+  set(CMAKE_AUTOMOC ON)
+  set(CMAKE_AUTOUIC ON)
+  set(CMAKE_AUTORCC ON)
+endif()
 
 # The library.
 add_subdirectory(src)
