@@ -63,9 +63,7 @@
       "displayName": "macOS",
       "configurePreset": "macos",
       "description": "Release build for macOS",
-      "targets": [
-        "QtAppInstanceManager"
-      ],
+      "targets": ["QtAppInstanceManager"],
       "configuration": "Release",
       "condition": {
         "type": "equals",
@@ -78,9 +76,7 @@
       "displayName": "Tests for macOS",
       "configurePreset": "macos",
       "description": "Tests release build for macOS",
-      "targets": [
-        "QtAppInstanceManagerTests"
-      ],
+      "targets": ["QtAppInstanceManagerTests"],
       "configuration": "Release",
       "condition": {
         "type": "equals",
@@ -93,9 +89,7 @@
       "displayName": "Windows",
       "configurePreset": "windows",
       "description": "Release build for Windows",
-      "targets": [
-        "QtAppInstanceManager"
-      ],
+      "targets": ["QtAppInstanceManager"],
       "configuration": "Release",
       "condition": {
         "type": "equals",
@@ -108,9 +102,7 @@
       "displayName": "Tests for Windows",
       "configurePreset": "windows",
       "description": "Tests release build for Windows",
-      "targets": [
-        "QtAppInstanceManagerTests"
-      ],
+      "targets": ["QtAppInstanceManagerTests"],
       "configuration": "Release",
       "condition": {
         "type": "equals",
@@ -123,9 +115,7 @@
       "displayName": "Linux",
       "configurePreset": "linux",
       "description": "Release build for Linux",
-      "targets": [
-        "QtAppInstanceManager"
-      ],
+      "targets": ["QtAppInstanceManager"],
       "configuration": "Release",
       "condition": {
         "type": "equals",
@@ -138,9 +128,7 @@
       "displayName": "Tests for Linux",
       "configurePreset": "linux",
       "description": "Tests release build for Linux",
-      "targets": [
-        "QtAppInstanceManagerTests"
-      ],
+      "targets": ["QtAppInstanceManagerTests"],
       "configuration": "Release",
       "condition": {
         "type": "equals",
@@ -159,8 +147,7 @@
       },
       "execution": {
         "noTestsAction": "error",
-        "stopOnFailure": false,
-        "rerun-failed": true
+        "stopOnFailure": false
       },
       "condition": {
         "type": "equals",
@@ -177,8 +164,7 @@
       },
       "execution": {
         "noTestsAction": "error",
-        "stopOnFailure": false,
-        "rerun-failed": true
+        "stopOnFailure": false
       },
       "condition": {
         "type": "equals",
@@ -195,8 +181,7 @@
       },
       "execution": {
         "noTestsAction": "error",
-        "stopOnFailure": false,
-        "rerun-failed": true
+        "stopOnFailure": false
       },
       "condition": {
         "type": "equals",
